@@ -1,5 +1,5 @@
 # Word Guess
-# mF 13sept22
+# mF 29sept22
 # -------------------------------
 # Simple "Hangman"-style guessing game.
 # For best results, run from a stand-alone console, and not the console included in PyCharm. The clear_screen function
@@ -24,6 +24,8 @@ file_word = dict_file.readline()
 while file_word != "":
     dict_array.append(file_word)
     file_word = dict_file.readline()
+
+dict_file.close()
 
 # Initialize variables
 guess = ""
