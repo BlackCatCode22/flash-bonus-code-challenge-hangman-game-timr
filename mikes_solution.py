@@ -1,9 +1,15 @@
-# Word Guess
+1# Word Guess
 # mF 29sept22
 # -------------------------------
 # Simple "Hangman"-style guessing game.
-# For best results, run from a stand-alone console, and not the console included in PyCharm. The clear_screen function
-# only works in the stand-alone environment. In PyCharm, you get an error ("TERM environment variable not set.")
+#
+# In PyCharm, if you get an error saying "TERM environment variable not set":
+# 1. Go to your configuration dropdown (probably says either the name of your file, i.e. main.py, or "Current File")
+# 2. Select "Edit configurations..."
+# 3. Click the "Edit configuration templates" link at the bottom right
+# 4. Select "Python" in the left pane
+# 5. Turn on the "Emulate terminal in output console" option
+# 6. Click "Apply" or "OK"
 
 # Import needed functions
 import random
@@ -153,6 +159,7 @@ while retry.lower()[0] == "y":
         elif hide_word == word:
             print("\nYOU WON!")
             score+=1
+            print("You have won", score, "game(s) so far.")
             remaining_guesses = 0
 
     # End of game
