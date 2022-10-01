@@ -1,4 +1,4 @@
-1# Word Guess
+# Word Guess
 # mF 29sept22
 # -------------------------------
 # Simple "Hangman"-style guessing game.
